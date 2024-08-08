@@ -121,12 +121,12 @@ Once done, rerun the test to ensure it still passes with the new assertion.
 
 You've now covered writing a test skeleton, navigating, locators, actions and assertions. It's time to put these concepts together and explore some new ones. Write an end to end test for the following flow. A user should be able to:
 
-1. navigate to the web application
-2. see the "Todo List App" heading
-3. enter a todo into the input with the "New Todo:" label
-4. click on the "Add" button to clear the input and add the todo to the list
-5. see the newly created todo in the list with an unchecked box and delete button next to it
-6. refresh the page and still see their todo in the list
+1. navigate to the web application✅
+2. see the "Todo List App" heading✅
+3. enter a todo into the input with the "New Todo:" label✅
+4. click on the "Add" button to clear the input and add the todo to the list✅
+5. see the newly created todo in the list with an unchecked box and delete button next to it✅
+6. refresh the page and still see their todo in the list✅
 7. mark the todo as completed by ticking its checkbox
 8. refresh the page and still see their todo in the list and ticked
 9. mark the todo as incomplete by unticking its checkbox
