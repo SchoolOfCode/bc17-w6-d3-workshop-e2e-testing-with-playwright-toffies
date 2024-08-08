@@ -27,25 +27,25 @@ Get familiar with the codebase and running the application.
    - Check the database schema and seed data (in the `db` folder) to see how information is stored.
    - To deepen your understanding of any complex parts of the code, feel free to copy snippets into ChatGPT or other AI assistants and ask them to explain what the code is doing. Use their explanations of the syntax and logic to strengthen your own knowledge.
 
-2. Set up a database server so you have a connection URL.
-3. Create a `.env` file in the root of the project and add a `DATABASE_URL` environment variable set to your connection URL and optionally a `PORT` variable. See `.env.example` for reference.
-4. Install dependencies with `npm install`.
-5. Initialise the database by running `npm run reset-db`. This will create the necessary tables with necessary data.
-6. Start the app with `npm run dev`. This launches the Express server which handles the API and serves the frontend.
-7. Open the URL printed in the terminal in your browser. You should see the todo app frontend. Play with it from a user's perspective.
-8. Now that you're familiar with the code and running the app, you're ready to begin the testing tasks!
+2. Set up a database server so you have a connection URL.✅
+3. Create a `.env` file in the root of the project and add a `DATABASE_URL` environment variable set to your connection URL and optionally a `PORT` variable. See `.env.example` for reference.✅
+4. Install dependencies with `npm install`.✅
+5. Initialise the database by running `npm run reset-db`. This will create the necessary tables with necessary data.✅
+6. Start the app with `npm run dev`. This launches the Express server which handles the API and serves the frontend.✅
+7. Open the URL printed in the terminal in your browser. You should see the todo app frontend. Play with it from a user's perspective.✅
+8. Now that you're familiar with the code and running the app, you're ready to begin the testing tasks!✅
 
 ### 🎫 Ticket 2 - Installing Playwright
 
 First, use the [installation instructions](https://playwright.dev/docs/intro) to install Playwright within the project.
 
-- During the installation process, you can interact with the options using arrow keys and the Enter key on your keyboard.
-- If it asks you about using TypeScript or JavaScript, choose JavaScript.
-- If it asks you where to put your end-to-end tests, choose `tests` (this is the folder where it'll place your tests).
-- If it asks you whether to add a GitHub Actions workflow, choose no.
-- If it asks you whether to install Playwright browsers, choose yes.
-- If it creates some example tests for you (in the `tests` and `tests-examples` folder), feel free to read through them and have tools like ChatGPT explain what the code is doing (if you're curious) but then ultimately delete them so that you've only got an empty `tests` folder and are ready to start fresh.
-- It it asks whether to override the existing `playwright.config.js` file, choose no.
+- During the installation process, you can interact with the options using arrow keys and the Enter key on your keyboard.✅
+- If it asks you about using TypeScript or JavaScript, choose JavaScript.✅
+- If it asks you where to put your end-to-end tests, choose `tests` (this is the folder where it'll place your tests).✅
+- If it asks you whether to add a GitHub Actions workflow, choose no.✅
+- If it asks you whether to install Playwright browsers, choose yes.✅
+- If it creates some example tests for you (in the `tests` and `tests-examples` folder), feel free to read through them and have tools like ChatGPT explain what the code is doing (if you're curious) but then ultimately delete them so that you've only got an empty `tests` folder and are ready to start fresh.✅
+- It it asks whether to override the existing `playwright.config.js` file, choose no.✅
 
 Then read through the [Writing Tests](https://playwright.dev/docs/writing-tests) page to get an overview of how tests are written in Playwright.
 
@@ -53,12 +53,12 @@ Then read through the [Writing Tests](https://playwright.dev/docs/writing-tests)
 
 At this stage you should have a `playwright.config.js` and an empty `tests` folder. Your next task is to write the minimum amount of code needed to create and run a Playwright test.
 
-- Create a `todos.test.js` file within the `tests` folder.
-  - Why: This creates a file within which you can put your tests. Ending the file with `test.js` lets Playwright know that this JavaScript file contains tests for it to run.
+- Create a `todos.test.js` file within the `tests` folder.✅
+  - Why: This creates a file within which you can put your tests. Ending the file with `test.js` lets Playwright know that this JavaScript file contains tests for it to run.✅
 - Inside the `todos.test.js` file, import `test` from `@playwright/test`
-  - Why: `test` is a function located within the Playwright package. It allows you to define test cases.
-  - If you're stuck on how to import `test` from Playwright, look for examples online or in their documentation.
-- Call `test` to define a new test named `"practice test should pass"` that doesn't do anything yet.
+  - Why: `test` is a function located within the Playwright package. It allows you to define test cases.✅
+  - If you're stuck on how to import `test` from Playwright, look for examples online or in their documentation.✅
+- Call `test` to define a new test named `"practice test should pass"` that doesn't do anything yet.✅
 
   - Why: Calling `test()` with correct arguments registers a new test.
   - If you're stuck on how to use/call `test`, look for examples online or in the Playwright documentation.
@@ -72,15 +72,15 @@ At this stage you should have a `playwright.config.js` and an empty `tests` fold
 
 When writing end-to-end tests, being able to navigate to a particular URL is an important step. In order to test the application, you've got to navigate to it first.
 
-If you're not already running the Express app from earlier, start it up with `npm run dev`. Keep it running and make sure you can access the frontend in a browser using the URL logged in the terminal.
+If you're not already running the Express app from earlier, start it up with `npm run dev`. Keep it running and make sure you can access the frontend in a browser using the URL logged in the terminal.✅
 
 - Why: Playwright by default won't start up your web application for you. So you need to ensure your application is running first before running your tests. If you run the tests without starting up the web application first, the tests won't be able to access the frontend and the tests would fail.
 
 Create a new, separate terminal and if needed, `cd` to the root of this project. This second terminal can be used for Playwright commands and running the tests.
 
-Within the existing test that you've started, use the [Playwright documentation](https://playwright.dev/docs/writing-tests#navigation) to programmatically navigate to the URL that the frontend is running on.
+Within the existing test that you've started, use the [Playwright documentation](https://playwright.dev/docs/writing-tests#navigation) to programmatically navigate to the URL that the frontend is running on.✅
 
-You should then rerun the tests to check whether navigation was successful and the test still passes. If you're using Playwright's UI mode to run the tests (as mentioned in the previous ticket), you can check if you can see the frontend for the todos web application in the Playwright UI.
+You should then rerun the tests to check whether navigation was successful and the test still passes. If you're using Playwright's UI mode to run the tests (as mentioned in the previous ticket), you can check if you can see the frontend for the todos web application in the Playwright UI.✅
 
 ### 🎫 Ticket 5 - Locating the input element
 
